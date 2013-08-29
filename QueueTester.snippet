@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Queue testing at five elemets</Title>
+      <Author>Zalan Meggyesi</Author>
+      <Description>Provides basic testing by printing out the five elements of the queue</Description>
+      <Shortcut>tester</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[        if (sortingQueue.Count == 5)
+        {
+        while (sortingQueue.Count > 0)
+        {
+        defaultDatagramImpl dataout = new defaultDatagramImpl(sortingQueue.Dequeue());
+        Console.WriteLine("Datagram contents: " + dataout.id + "; " + dataout.type + "; " + dataout.position + "; " + dataout.attitude + "; " + dataout.value);
+        }
+        }
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

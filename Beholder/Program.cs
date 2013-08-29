@@ -4,70 +4,69 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using messaging;
+using messagesorting;
 
 namespace Beholder
+{
+
+    class Program
     {
-    public struct bufferQueue
+        static void Main(string[] args)
         {
+            Boolean breakFlag = false;
+            Queue<defaultDatagramImpl> sortingQueue = new Queue<defaultDatagramImpl>();
 
-        private string _datagram;
-
-        public string data
+            string buffer = "thermo1.thermal.11,22,33.44,55,66.11235";
+            int ranNo = 0;
+            while (!breakFlag)
             {
-            get
+                /*
+                 * function to retrieve data from the serial interface, into buffer
+                 */                
+                string[] inputs = buffer.Split(new Char[] { '.' });
+
+                //// Create new sensor node objects, name, transmit message
+                //MessageQueuing.SensorNode n1 = new MessageQueuing.SensorNode();
+                //n1.setname(sensorID);
+                //n1.sendID(n1.name);
+                //n1.setlocation(sensorLocation);
+                //n1.sendLocation(n1.location);
+                //n1.readValue(sensorReading);
+                //n1.sendMessage(n1.reading);
+
+                //// start processing queue
+                //MessageQueuing.CentralMessageProcessor cmp = new MessageQueuing.CentralMessageProcessor();
+                //cmp.startProcessing();
+
+                //Create defaultDatagramImpl object and sorting queue
+
+                //Parse data into defaultDatagramImpl and enqueue
+                defaultDatagramImpl data = new defaultDatagramImpl();
+                data.id = inputs[0];
+                data.type = inputs[1];
+                data.position = inputs[2];
+                data.attitude = inputs[3];
+                data.value = inputs[4];
+                sortingQueue.Enqueue(data);
+
+                ranNo++;
+                buffer += ranNo;
+
+                System.Console.WriteLine("Value: " + inputs[4]);
+                System.Console.WriteLine("Count: " + sortingQueue.Count);
+                
+                if (sortingQueue.Count == 5)
                 {
-                return _datagram;
-                }
-            set
-                {
-                this._datagram = value;
-                }
-            }
-
-        public bufferQueue(string datagram)
-            {
-            _datagram = datagram;
-            }
-        }
-
-
-        class Program
-            {
-            static void Main(string[] args)
-                {
-                int meh;
-
-                Boolean breakFlag = false;
-                while (!breakFlag)
+                    while (sortingQueue.Count > 0)
                     {
-                    //function to retrieve data from the serial interface, into buffer
-                    string buffer = " ";
-
-                    string[] inputs = buffer.Split(new Char[] { '.' });
-                    string sensorID = inputs[0];
-                    string sensorLocation = inputs[1];
-                    string sensorReading = inputs[2];
-
-                    // Create new sensor node objects, name, transmit message
-                    MessageQueuing.SensorNode n1 = new MessageQueuing.SensorNode();
-                    n1.setname(sensorID);
-                    n1.sendID(n1.name);
-                    n1.setlocation(sensorLocation);
-                    n1.sendLocation(n1.location);
-                    n1.readValue(sensorReading);
-                    n1.sendMessage(n1.reading);
-
-                    // start processing queue
-                    MessageQueuing.CentralMessageProcessor cmp = new MessageQueuing.CentralMessageProcessor();
-                    cmp.startProcessing();
-
-                    meh = Console.Read();
-                    string ch = Convert.ToString(meh);
-                    if (ch == "x")
-                        breakFlag = true;
-                    if (breakFlag == true)
-                        break;
+                        defaultDatagramImpl dataout = new defaultDatagramImpl(sortingQueue.Dequeue());
+                        Console.WriteLine("Datagram contents: " + dataout.id + "; " + dataout.type + "; " + dataout.position + "; " + dataout.attitude + "; " + dataout.value);
                     }
                 }
+
+                if (breakFlag == true)
+                    break;
             }
         }
+    }
+}
