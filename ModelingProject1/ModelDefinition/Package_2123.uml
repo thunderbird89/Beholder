@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="1dba0b81-1ebe-401f-88ec-4630b0bbfb5a"
+  name="Beholder"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="83293c6b-e870-46d7-a1fc-9e1a9bea30ae"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DBeholder"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="665fd2ed-642f-48bc-a7f0-f37c010d3c04"
+        name="Framework"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a9f645d6-30c6-4f61-a742-9317dd5bdd76"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3DFramework"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b24353b3-95fd-4081-9ecb-93e65fec81d3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17e0d5c6-9145-4fa8-8ef8-ed86835fb9e0">
+                <propertyInstance
+                  Id="f7bf45d7-522c-4590-8276-bc5fdc4d4fb2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ced30f9-5078-4c5c-acf7-4afa7c166686">
+                <propertyInstance
+                  Id="65447eb0-6876-4660-bdc0-2fff16862399"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63406ce1-70fd-4948-8252-708936203776">
+                <propertyInstance
+                  Id="00aba9f9-f51b-498c-8419-ed4a8b3d9f20"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6087a22f-2250-4946-9b8c-4ba47f762538">
+                <propertyInstance
+                  Id="6889c63f-eabb-4313-9d24-1c2c6ca4093f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8894087-20c5-4c42-bab2-811bcd9e3906">
+                <propertyInstance
+                  Id="5e569ac7-3726-41b8-a612-ad324f39d0d6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="13ad3af9-3aae-4d6f-b0a0-1c68d13201a5"
+            name="Main"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="22d62e9a-fb81-44d0-964e-2972d54c2c1a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3DFramework Member%3DMain"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="97e1f8ce-dcd4-4b21-b93d-bda15f480cbb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12d1ead0-933b-432e-b7a5-2f5bd8426e6c">
+                    <propertyInstance
+                      Id="8f16bc06-295b-4094-a5e5-f21e57f9902f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45cc6b4b-a134-4c32-95ca-1b402411748a">
+                    <propertyInstance
+                      Id="a80eb4b2-00dd-4d37-97fd-beee81d8c868"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25197dd5-48e8-46c1-9cce-a8e3804432d0">
+                    <propertyInstance
+                      Id="0b84d5da-bbdf-4d08-9ad7-128acf562a8d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de921d1e-114a-4499-b0e8-c8d9318628d9">
+                    <propertyInstance
+                      Id="4071a9c8-8233-467a-8a80-2d34d36209e9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7097d3c-013c-4bd3-adc9-d6761acdaa33">
+                    <propertyInstance
+                      Id="5b995832-31db-4ebf-becc-db384f8badc5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32613485-b0c9-4bab-828c-1ce5be86c632">
+                    <propertyInstance
+                      Id="71136f0e-2696-4d36-9957-7a3adc982ec8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ca2a922b-0388-43d2-8d63-192312ab0b00"
+            name="Framework"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="98200679-d3b6-4191-8bd3-afd5833971a2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3DFramework Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3800057-c535-496e-8349-97fa9950e1bb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44364396-d409-42f3-8229-499b03054f6e">
+                    <propertyInstance
+                      Id="9d3923ac-eba6-403e-ad80-a98e01a5690f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb6798b-7b54-4e44-a4b7-c5f31240b2ca">
+                    <propertyInstance
+                      Id="35e472b6-5955-4725-a602-d4df92f8e1ff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="937c9dae-f490-4d05-923e-b99804e19976">
+                    <propertyInstance
+                      Id="62f49ed3-9613-4942-bd01-cdca17725a0a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f25f9f5c-7470-4007-a996-38c321e54af4">
+                    <propertyInstance
+                      Id="d9e3ff38-4326-49a0-ad66-644f7a11bb84"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45e8f491-3c48-46a1-b949-62f8cfd597d4">
+                    <propertyInstance
+                      Id="1fbf9ea6-2125-4805-8b5f-3803facb6d43"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="65cd336e-4d9e-491f-9b11-79cc91e575ef">
+                    <propertyInstance
+                      Id="65309875-cae4-4fd3-8353-1b8818aeac30"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a7793956-64ba-4ae7-bfc9-614548803851"
+        name="sonicCrackDetect"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5309778d-d6df-47ad-ad25-941c68bf66bd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3D(Name%3DsonicCrackDetect ParentType%3DFramework)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="955d1604-e06f-4e3c-9312-aee71581be50"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b62f9ffe-e9fe-40d3-9366-8263ce9f7580">
+                <propertyInstance
+                  Id="4a7cb6df-b060-497f-a6c8-2d63e7aab8c9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ba86bb7-ad9e-4666-b753-bc3f080ffbe9">
+                <propertyInstance
+                  Id="b9cfbef2-a7b9-4c8d-be3b-8f5c0f250bfa"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67c6c9a9-9b3d-457d-81d9-df4ece9b3c15">
+                <propertyInstance
+                  Id="f002e155-c114-4499-bdf4-7db008d89f3b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c95521a-c8b5-4879-9d59-c8a81b9a20b0">
+                <propertyInstance
+                  Id="fa34df67-2d3b-43e3-b441-3de45c467bd1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f42a68d1-59d7-4837-b796-b8df1f9933d8">
+                <propertyInstance
+                  Id="0d75c34e-5e92-44e6-8843-1982464a4442"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="eee1fc5d-bff5-4fb5-95b7-be532c65a7c4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="665fd2ed-642f-48bc-a7f0-f37c010d3c04"
+              LastKnownName="Framework"
+              LastKnownLocation="Package_2123.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="053a3192-b499-4594-a6ba-c28bf371d474"
+            name="analyzeCracks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8bcec516-06b3-4f6f-b3ad-c4211d5e0831"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3D(Name%3DsonicCrackDetect ParentType%3DFramework) Member%3D(Name%3DanalyzeCracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3Dmessagesorting Type%3DsonicDatagramImpl)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b0c641c2-0a2e-4033-bf2f-3386911b3651"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e628ad1-e4c2-4932-8a89-774d6a6387cf">
+                    <propertyInstance
+                      Id="8206a3aa-aa52-41c3-9fa4-136ed57cae73"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e520e69-3fd2-440a-bcec-9ed2e7e17ec0">
+                    <propertyInstance
+                      Id="f95b3c0f-9a7d-475a-a6fe-7b6403ddbcef"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93656750-06be-46ba-aece-5624dc5a5b57">
+                    <propertyInstance
+                      Id="3bb075b4-3cd5-44a3-adce-c0af4fe4630a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdf905ef-d298-4fbb-9afe-0c949825bb4d">
+                    <propertyInstance
+                      Id="664a7345-7052-43e0-b5bd-a7622e74df55"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b805cc9a-0837-409e-975f-7989b9febd46">
+                    <propertyInstance
+                      Id="713a5144-70d2-4454-a02f-1d9bb15e3bba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf920463-1474-496b-82b6-82b1e1eb4660">
+                    <propertyInstance
+                      Id="7c8362b6-3855-49af-906c-11af4f24dfa5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34c4e30e-f2a2-4f39-989b-27aeef98d7b3"
+                  name="dataSonic"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e175c3b-7fbe-4434-a6dc-741bd1660f0f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3D(Name%3DsonicCrackDetect ParentType%3DFramework) Member%3D(Name%3DanalyzeCracks OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3Dmessagesorting Type%3DsonicDatagramImpl)]) ParameterIdentifier%3DdataSonic"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9596faed-ad78-42a7-af20-8afff6ffa644"
+                      LastKnownName="sonicDatagramImpl"
+                      LastKnownLocation="Package_1516.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4669f090-9ebf-4e53-a56c-e4bc784613e6"
+            name="sonicCrackDetect"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4735cdaf-ad22-407a-aa87-736a9c41da49"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FThunderBird%2Fdocuments%2Fvisual studio 2012%2FProjects%2FBeholder%2FBeholder%2Fbin%2FDebug%2FBeholder.exe&quot; Namespace%3DBeholder Type%3D(Name%3DsonicCrackDetect ParentType%3DFramework) Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fb4cb61b-7254-43f9-8089-a7f29d2a2989"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39b3bce8-ad63-41b7-bf59-bd6dc0a916dc">
+                    <propertyInstance
+                      Id="992d911d-d128-4d49-8a76-d43027c24273"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0235648d-06b1-4790-a7d3-05f7ec14d446">
+                    <propertyInstance
+                      Id="0b35c6c5-fbd1-4fc1-ac87-85863b042b55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18a9adda-279b-4b99-b20b-6410ca46fd20">
+                    <propertyInstance
+                      Id="cde6e21e-a83c-4d93-badc-b71b216acb56"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2c95857-8221-4118-b28c-2188d34d3eb8">
+                    <propertyInstance
+                      Id="6bc7b9b0-29f7-44ce-93b4-66818535de7d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a424240e-9d60-4f0f-8360-edbf26d413f3">
+                    <propertyInstance
+                      Id="dddffa45-7c50-46c3-bfb9-3f94e13d4207"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5e7c42e-3353-4eba-959a-54f2755999ab">
+                    <propertyInstance
+                      Id="65a81f5c-0482-40c1-9e5d-2a3b1efd431e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Message processing.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ultrasonicsCrackDetection.cs" />
+    <Compile Include="MessageSorting.cs" />
+    <Compile Include="Framework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
