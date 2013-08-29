@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{80fb6e82-ec65-4f4d-a492-8ca08361548e}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
-    <Name>ModelingProject1</Name>
+    <Name>Modeling</Name>
     <RootNamespace>ModelingProject1</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -28,26 +28,19 @@
     <Content Include="ModelDefinition\Package_2123.uml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLActivityDiagram1.activitydiagram">
+    <Content Include="Classes.classdiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLActivityDiagram1.activitydiagram.layout">
+    <Content Include="Classes.classdiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLActivityDiagram1.activitydiagram</DependentUpon>
+      <DependentUpon>Classes.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UMLClassDiagram1.classdiagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UMLClassDiagram1.classdiagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>UMLClassDiagram1.classdiagram</DependentUpon>
-    </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram">
+    <Content Include="Communications.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLSequenceDiagram1.sequencediagram.layout">
+    <Content Include="Communications.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLSequenceDiagram1.sequencediagram</DependentUpon>
+      <DependentUpon>Communications.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject1.uml">

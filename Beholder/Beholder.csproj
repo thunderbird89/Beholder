@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ultrasonicsCrackDetection.cs" />
+    <Compile Include="Spectroscopy.cs" />
+    <Compile Include="Vision.cs" />
+    <Compile Include="Sonics.cs" />
     <Compile Include="MessageSorting.cs" />
     <Compile Include="Framework.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
