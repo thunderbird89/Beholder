@@ -67,11 +67,28 @@ namespace Beholder
                     while (sortingQueue.Count > 0)
                     {
                         defaultDatagramImpl dataout = new defaultDatagramImpl(sortingQueue.Dequeue());
-                        if (dataout.type == "sonic")
+                        switch(dataout.type)
                         {
-                            dataSonic.id = dataout.id;
-                            dataSonic.value = dataout.value;
-                            cracking.analyzeCracks(dataSonic);
+                            case "sonic":
+                                {
+                                    //transfer control to sonics
+                                    break;
+                                }
+                            case "thermal":
+                                {
+                                    //thermal block
+                                    break;
+                                }
+                            case "spectral":
+                                {
+                                    //spectral block
+                                    break;
+                                }
+                            case "vision":
+                                {
+                                    //visual
+                                    break;
+                                }
                         }
                     }
                 }

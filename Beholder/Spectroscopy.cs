@@ -16,7 +16,10 @@ namespace spectro
 
     public class fingerprinting
     {
-        // Fingerprinting algorhythm
+        public void hash()
+        {
+            // Fingerprinting algorhythm
+        }
         // Fuzzy logic filtering?
     }
 }
